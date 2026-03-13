@@ -1,0 +1,19 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+notebooks/submission.csv
+submission.csv
+
+# OS/editor files
+.DS_Store
+.vscode/
