@@ -14,6 +14,12 @@ __pycache__/
 notebooks/submission.csv
 submission.csv
 
+# Data and outputs (Kaggle files and generated artifacts)
+data/
+data_info/
+submissions/
+
 # OS/editor files
 .DS_Store
 .vscode/
+desktop.ini
