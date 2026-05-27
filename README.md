@@ -12,6 +12,7 @@ https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 - Baseline Linear Regression plus regularized and tree-based models.
 - Cross-validation and model blending for stronger generalization.
 - Kaggle submission generation with reproducible preprocessing.
+- Public leaderboard RMSE: **0.16475**.
 
 ## Repository Structure
 
@@ -50,12 +51,14 @@ If you want the data description file locally, place it in `data_info/`.
 
 Run notebooks in order:
 
-1. `notebooks/1-Data-Cleaning.ipynb`
-2. `notebooks/2-Data-Preprocessing.ipynb`
-3. `notebooks/3-Feature-Engineering.ipynb`
-4. `notebooks/4-Exploratory-Data-Analysis.ipynb`
-5. `notebooks/5-Linear-Regression-Homework.ipynb`
-6. `notebooks/6-Advanced-Modeling.ipynb`
+1. **1-Data-Cleaning.ipynb** — Handle missing values, outliers, and data quality issues.
+2. **2-Data-Preprocessing.ipynb** — Feature scaling, categorical encoding, and train/test split.
+3. **3-Feature-Engineering.ipynb** — Create new features, polynomial terms, and feature interactions.
+4. **4-Exploratory-Data-Analysis.ipynb** — Correlations, distributions, and key insights.
+5. **5-Linear-Regression-Homework.ipynb** — Baseline models: Linear Regression, Ridge, Lasso, ElasticNet.
+6. **6-Advanced-Modeling.ipynb** — Tree-based models (XGBoost, LightGBM, Random Forest), hyperparameter tuning, ensemble blending.
+
+Notebook 6 exports the Kaggle submission CSV to `submissions/` (ignored in git).
 
 ## Environment Setup
 
@@ -83,9 +86,6 @@ Then launch Jupyter:
 jupyter lab
 ```
 
-## Results
-
-**Kaggle Public Leaderboard: RMSE = 0.16475**
 
 ### Model Performance (Test Set)
 
