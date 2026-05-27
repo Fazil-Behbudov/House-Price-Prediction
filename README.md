@@ -85,8 +85,28 @@ jupyter lab
 
 ## Results
 
-Model metrics, plots, and CV results are documented in notebooks 5 and 6.
-The advanced notebook includes an ensemble blend and a Kaggle-ready submission.
+**Kaggle Public Leaderboard: RMSE = 0.16475**
+
+### Model Performance (Test Set)
+
+| Model | RMSE | R² Score |
+|-------|------|----------|
+| XGBoost | 0.0896 | 0.9230 |
+| LightGBM | 0.0968 | 0.9100 |
+| Lasso | 0.0986 | 0.9066 |
+| ElasticNet | 0.1033 | 0.8975 |
+| Random Forest | 0.1043 | 0.8955 |
+| Ridge | 0.1107 | 0.8824 |
+| Linear Regression | 0.1189 | 0.8643 |
+
+### Ensemble Strategy
+
+- **Best Individual Model**: XGBoost (RMSE: 0.0896)
+- **Best Ensemble**: Tuned blend of XGBoost + LightGBM + ElasticNet + Lasso
+  - **Final Test RMSE**: 0.0881 | **R²**: 0.9254
+- **CV Stability**: ElasticNet achieved best cross-validation RMSE (0.1180) with strong regularization
+
+Detailed metrics, CV results, and model blending strategy documented in `notebooks/5-Linear-Regression-Homework.ipynb` and `notebooks/6-Advanced-Modeling.ipynb`.
 
 ## Notes
 
