@@ -1,0 +1,19 @@
+New Features Created:
+---------------------
+1. TotalSF
+2. TotalBathrooms
+3. TotalPorchSF
+4. LivingArea_to_LotArea
+5. HouseAge
+6. GarageAge
+7. IsNewlyBuilt
+8. HasSecondFloor
+9. HasGarage
+10. HasFireplace
+11. HasPorch
+12. IsRemodeled
+13. Quality_x_Area
+14. Quality_x_Condition
+15. NeighborhoodQuality_x_Area
+16. Bathrooms_x_Bedrooms
+17. OverallQual_Squared
